@@ -6,7 +6,67 @@
 
 <ion-content>
 <p> Você está logado! </p>
-<ion-button href = home expand = full >voltar</ion-button>
+<p> Por favor indique as suas caracteristicas !</p>
+  <ion-item>
+  <ion-label>Olhos do Pai</ion-label>
+  <ion-input [(ngModel)] ="pai"></ion-input>
+  <ion-select value="brown" okText="Ok" cancelText="voltar">
+    <ion-select-option value="brown">Azul</ion-select-option>
+    <ion-select-option value="blonde">Castanho</ion-select-option>
+    <ion-select-option value="black">Verde</ion-select-option>
+        <ion-select-option value="black">Preto</ion-select-option>
+  </ion-select>
+  </ion-item>
+  <ion-item>
+  <ion-label>Olhos da Mãe</ion-label>
+  <ion-input [(ngModel)] ="mae"></ion-input>
+  <ion-select value="brown" okText="Ok" cancelText="voltar">
+    <ion-select-option value="brown">Azul</ion-select-option>
+    <ion-select-option value="blonde">Castanho</ion-select-option>
+    <ion-select-option value="black">Verde</ion-select-option>
+    <ion-select-option value="black">Preto</ion-select-option>
+  </ion-select>
+</ion-item>
+<ion-item>
+<ion-label>Cabelo do Pai</ion-label>
+<ion-input [(ngModel)] ="carac-pais.pai"></ion-input>
+<ion-select value="brown" okText="Okay" cancelText="Dismiss">
+  <ion-select-option value="brown">Loiro</ion-select-option>
+  <ion-select-option value="blonde">Castanho</ion-select-option>
+  <ion-select-option value="black">Preto</ion-select-option>
+</ion-select>
+</ion-item>
+<ion-item>
+<ion-label>Cabelo da Mãe</ion-label>
+<ion-input [(ngModel)] ="carac-pais.mae"></ion-input>
+<ion-select value="brown" okText="Okay" cancelText="Dismiss">
+  <ion-select-option value="brown">Loiro</ion-select-option>
+  <ion-select-option value="blonde">Castanho</ion-select-option>
+  <ion-select-option value="black">Preto</ion-select-option>
+</ion-select>
+</ion-item>
+<ion-item>
+<ion-label>Pele do Pai</ion-label>
+<ion-input [(ngModel)] ="carac-pais.pai"></ion-input>
+<ion-select value="brown" okText="Okay" cancelText="Dismiss">
+  <ion-select-option value="brown">Rosada</ion-select-option>
+  <ion-select-option value="blonde">Amarelada</ion-select-option>
+  <ion-select-option value="black">Clara</ion-select-option>
+  <ion-select-option value="black">Parda</ion-select-option>
+  <ion-select-option value="black">Negra</ion-select-option>
+</ion-select>
+</ion-item>
+<ion-item>
+<ion-label>Pele da Mãe</ion-label>
+<ion-input [(ngModel)] ="carac-pais.mae"></ion-input>
+<ion-select value="brown" okText="Okay" cancelText="Dismiss">
+  <ion-select-option value="brown">Rosada</ion-select-option>
+  <ion-select-option value="blonde">Amarelada</ion-select-option>
+  <ion-select-option value="black">Clara</ion-select-option>
+  <ion-select-option value="black">Parda</ion-select-option>
+  <ion-select-option value="black">Negra</ion-select-option>
+</ion-select>
+</ion-item>
+  <ion-button expand="full" href = "estado-salvar">vamos conferir o seu Baby Ruru?</ion-button>
 <ion-button  expand = full (click)="logout()">deslogar</ion-button>
-  <ion-button expand="full" href = "estado-salvar">estado</ion-button>
 </ion-content>

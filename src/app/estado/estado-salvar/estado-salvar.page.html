@@ -1,17 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>estado-salvar</ion-title>
+    <ion-title>Nome do Baby Ruru</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
   <ion-item>
-    <ion-label position="floating">Nome</ion-label>
+    <ion-label position="floating">Nome do seu Baby Ruru (Menina)?</ion-label>
     <ion-input name="nome" [(ngModel)]="estado.nome"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">Sigla</ion-label>
-    <ion-input name="sigla" [(ngModel)]="estado.sigla"></ion-input>
+    <ion-label position="floating">Nome do seu Baby Ruru (menino)?</ion-label>
+    <ion-input name="nome" [(ngModel)]="estado.nome"></ion-input>
   </ion-item>
-  <ion-button expand="full" shape="round" (click)="salvar()">salvar</ion-button>
-    <ion-button expand="full" href = "cidade-salvar">cidade</ion-button>
+  <ion-button expand="full"" (click)="salvar()">salvar</ion-button>
+    <ion-button expand="full" href = "cidade-salvar">Que cidade você mora?</ion-button>
+      <ion-button href="estado-listar">Ir paara lista</ion-button>
 </ion-content>
