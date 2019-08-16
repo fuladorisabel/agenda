@@ -8,10 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./pagina.page.scss'],
 })
 export class PaginaPage implements OnInit {
-  ngOnInit(): void {
-    throw new Error("Method not implemented.");
+  ngOnInit() {
   }
-
   constructor(private afAuth: AngularFireAuth, private router: Router) { }
 
   logout() {
