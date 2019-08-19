@@ -21,4 +21,11 @@ export class HomePage {
     this.afAuth.auth.signOut();
     this.router.navigate(['home']);
   }
+   redefinir(){
+     alert('verifique seu email');
+     this.afAuth.auth.sendPasswordResetEmail(this.usuario.email).then(
+       ()=> alert('verifique seu email'));{ this.router.navigate([]);}
+
+
+   }
 }
