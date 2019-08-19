@@ -19,4 +19,5 @@ export class CadastroPage implements OnInit {
       () => { this.router.navigate(['pagina']); }
     ).catch((erro) => console.log(erro));
   }
+  
 }

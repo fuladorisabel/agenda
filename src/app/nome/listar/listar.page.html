@@ -6,11 +6,11 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let estado of listaEstado | async">
-      <ion-label>{{estado.nome}}</ion-label>
+    <ion-item *ngFor="let nome of listaNome | async">
+      <ion-label>{{nome.nome}}</ion-label>
     </ion-item>
   </ion-list>
 </ion-content>
 <ion-footer>
-  <ion-button href="estado-salvar">Voltar</ion-button>
+  <ion-button href="salvar">Voltar</ion-button>
 </ion-footer>

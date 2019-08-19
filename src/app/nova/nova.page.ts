@@ -6,18 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nova.page.scss'],
 })
 export class NovaPage implements OnInit {
+  [x: string]: any;
 
-  constructor() { }
+  constructor() {
+  this.afAuth.auth.sendPasswordResetEmail(this.usuario.email); }
 
   ngOnInit() {
   }
 
 validar(){
-  /*if (senha != ) {
-    alert("Senhas diferentes!");
-  }
-  else {
-    ('redefinido com sucesso!');
-  }*/
+
 }
 }

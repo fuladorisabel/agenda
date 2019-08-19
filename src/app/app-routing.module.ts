@@ -9,8 +9,8 @@ const routes: Routes = [
   { path: 'cadastro', loadChildren: './cadastro/cadastro.module#CadastroPageModule' },
    { path: 'cidade-salvar', loadChildren: './cidade/cidade-salvar/cidade-salvar.module#CidadeSalvarPageModule' },
   { path: 'cidade-listar', loadChildren: './cidade/cidade-listar/cidade-listar.module#CidadeListarPageModule' },
-  { path: 'estado-salvar', loadChildren: './estado/estado-salvar/estado-salvar.module#EstadoSalvarPageModule' },
-  { path: 'estado-listar', loadChildren: './estado/estado-listar/estado-listar.module#EstadoListarPageModule' },
+  { path: 'salvar', loadChildren: './nome/salvar/salvar.module#SalvarPageModule' },
+  { path: 'listar', loadChildren: './nome/listar/listar.module#ListarPageModule' },
 
 ];
 
